@@ -1,0 +1,52 @@
+{
+  "name": "spacefish-bot",
+  "version": "1.0.0",
+  "description": "🤖 A helpful bot to automate common tasks on Spacefish Issues/PRs",
+  "author": "Matan Kushner <hello@matchai.me>",
+  "license": "ISC",
+  "repository": "https://github.com/matchai/spacefish-bot.git",
+  "homepage": "https://github.com/matchai/spacefish-bot",
+  "bugs": "https://github.com/matchai/spacefish-bot/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "prettier --write \"**/*.{js,json,md}\"",
+    "test": "jest",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "precommit": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "dedent": "^0.7.0",
+    "probot": "^7.2.0"
+  },
+  "devDependencies": {
+    "husky": "^1.1.4",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "prettier": "^1.15.2",
+    "smee-client": "^1.0.2"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  }
+}
