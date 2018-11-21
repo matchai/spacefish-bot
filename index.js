@@ -12,7 +12,7 @@ module.exports = app => {
     if (!isIssueNumber(title)) return;
 
     const issueNumber = getIssueNumber(title);
-    context.log(`Issue #${issueNumber} is being cloned`);
+    context.log(`Issue/PR #${issueNumber} is being cloned`);
 
     const spaceshipIssue = await getSpaceshipIssue({ context, issueNumber });
     context.log(
