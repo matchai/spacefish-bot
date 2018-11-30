@@ -6,6 +6,7 @@
     "WEBHOOK_SECRET": "@spacefish-webhook-secret",
     "PRIVATE_KEY": "@spacefish-key"
   },
+  "alias": "spacefish-bot",
   "scale": {
     "sfo1": {
       "min": 1,
