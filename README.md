@@ -12,6 +12,20 @@ npm install
 npm start
 ```
 
+## Deploying
+
+```sh
+# Add environment variables to Now
+now secrets add spacefish-app-id <your-app-id>
+now secrets add spacefish-webhook-secret <random-webhook-secret>
+
+# Download your private key to the root of this project and use base64 encoding to add it to Now
+now secrets add spacefish-key '$(cat ./private-key.pem | base 64)'
+
+# Deploy to now
+now
+```
+
 ## Contributing
 
 If you have suggestions for how spacefish-bot could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
