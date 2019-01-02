@@ -34,4 +34,4 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[ISC](LICENSE) © 2018 Matan Kushner &lt;hello@matchai.me&gt;
+[ISC](LICENSE) © 2019 Matan Kushner
